@@ -1,0 +1,237 @@
+
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[a4,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeCertification}[2]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape  Chaparala Sanjay} \\ \vspace{1pt}
+    \small \href{tel:+91 7842814665}{\underline{+91 7842814665}} $|$ \href{mailto:sanjaychaparala@gmail.com}{\underline{sanjaychaparala@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/sc0225/}{\underline{linkedin.com/in/sc0225}} $|$
+    \href{https://github.com/SanjayChaparala}{\underline{github.com/SanjayChaparala}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Vellore Institute of Technology}{Vellore, India}
+      {Bachelor of Computer Science \& Engineering - 8.85 CGPA}{July 2021 -- June 2025 (expected)}
+      % {\scriptsize \textit{ \footnotesize{\newline{}\textbf{Courses:} Operating Systems, Data Structures, Analysis Of Algorithms, Artificial Intelligence, Machine Learning, Networking, Databases}}}
+  \resumeSubHeadingListEnd
+
+%-----------CERTIFICATION-----------
+\section{Certification}
+  \resumeSubHeadingListStart
+    \resumeCertification
+      {Microsoft Azure AI Fundamentals Certified Professional}
+      {\href{https://www.credly.com/badges/2e622083-35f1-4c7e-a8ef-6fec9d73fe91}{\underline{Certificate Link}}}
+
+      \resumeCertification
+      {Introduction to MongoDB}
+      {\href{https://learn.mongodb.com/c/E0PGTBzoRKuwMcHm6oDsIw}{\underline{Certificate Link}}}
+
+      \resumeCertification
+      {Data Analysis with Python}
+      {\href{https://www.freecodecamp.org/certification/fcc1bc849c1-78b2-4fde-8850-ddfef14e44eb/data-analysis-with-python-v7}{\underline{Certificate Link}}}
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, Go, C, C++} \\
+     
+     \textbf{ML}{: Prediction models, CNN, Image Recognition  }\\
+     \textbf{Data Analysis}{: Tableau, Power BI, Matplotlib, Pandas, Numpy}
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Data Science Intern, Quantela}{August 2023 -- November 2023}
+      {\href{https://drive.google.com/file/d/1fWexdQf-nTVMgwk-GUvpehknlMyzHqbW/view}{\underline{Certificate Link}}}{}
+      \vspace{0.1em}
+      \resumeItemListStart
+        
+        \resumeItem{\textbf{Land Classification Framework}: Developed a Computer Vision framework using OpenCV and TensorFlow to classify and detect land types from satellite imagery, improving accuracy for urban planning.}
+            
+        \resumeItem{\textbf{Algorithm Development}: Engineered advanced algorithms with Python, scikit-learn, and Keras, enhancing detection precision and reliability for land classification.}
+        
+        \resumeItem{\textbf{Data Processing}: Preprocessed and analyzed large satellite image datasets using Pandas and NumPy, improving model performance and accuracy.}
+        
+        \resumeItem{\textbf{Model Integration}: Integrated Computer Vision models into practical urban planning applications using Docker, facilitating efficient deployment and real-world use.}
+        
+        \resumeItem{\textbf{Google Colab Utilization}: Leveraged Google Colab for running experiments and training models, accessing powerful computational resources and enabling seamless collaboration.}
+        
+        \resumeItem{\textbf{Professional Development}: Adapted to the corporate environment, gaining insights into corporate operations and the practical applications of Computer Vision.}
+        
+        \resumeItem{\textbf{Project Contribution}: Contributed to optimizing space and resources for urban planning by accurately classifying and detecting land types.}
+
+        \resumeItem{\textbf{Documentation and Presentation}: Documented processes and findings with Jupyter Notebooks and Microsoft Office, and presented results to the team, improving communication and utilization of project outcomes.}
+
+        \resumeItem{\textbf{Team Collaboration}: Worked closely with a team of 3, enhancing project success and fostering a rich learning experience..}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Land Classifier and Detector } $|$ \emph{Google Collab, Python,TensorFlow}}{\href{https://github.com/SanjayChaparala/Land-Classification-and-Detection}{\underline{GitHub Link}}}
+          \resumeItemListStart
+            \resumeItem{Triumphantly Developed Computer Vision Framework for Land Classification and Detection Using Satellite Imagery, Achieving Remarkable Accuracy in Urban Planning Applications.\\
+
+- Technologies used: Python, OpenCV, TensorFlow, YOLOv5, Google Colab, Pandas, NumPy, scikit-learn, Keras, Docker. }
+      
+
+          
+            %\resumeItem{Followed \textbf{Clean Architecture Principles} - excellent project maintainability, upgradability and scalability.}
+            % \resumeItem{Implemented the backend in Go, JWT and WebSockets using Go-Gin and Go-Gorilla frameworks.}
+            %\resumeItem{Implemented \textbf{Stateless Authentication} using JSON Web Tokens (JWT) with http-only cookie.}
+            %\resumeItem{Implemented real-time communication using \textbf{WebSockets} with Go-Gorilla framework.}
+          \resumeItemListEnd
+          
+     \resumeProjectHeading
+          {\textbf{Research Topic Predictor} $|$ \emph{Jupyter Notebook, Python, TensorFlow}}{\href{https://github.com/SanjayChaparala/Research-Topic-Predictor}{\underline{GitHub Link}}}
+          \resumeItemListStart
+       \resumeItem{Successfully Developed Advanced Topic Modeling System for Accurate Classification of Research Articles, Significantly Enhancing Search and Recommendation Processes in Scientific Archives.\\
+       - Technologies used: Python, OpenCV, TensorFlow, YOLOv5, Google Colab, Pandas, NumPy, scikit-learn, Keras, Docker.}
+            
+            
+          \resumeItemListEnd
+
+       %   \resumeProjectHeading
+        %  {\textbf{Personal Websites} $|$ \emph{Git, Astro, Headless GraphQL CMS (HyGraph), Vercel}}{\href{https://github.com/thekernelkiller/viveks-space}{\underline{GitHub Link}}}
+         % \resumeItemListStart
+           % \resumeItem{Developed two \textbf{content-focused} personal websites - a \textbf{\href{https://vivekirl.studio/}{\underline{portfolio page}}} and a \textbf{\href{https://vivekirl.space/}{\underline{blog page}}}.  }
+           % \resumeItem{\textbf{Serverless deployment} on Vercel, \textbf{Automated CI/CD and Content Fetching} from HyGraph \\ using Git and Vercel WebHooks, respectively. }
+           % \resumeItem{\textbf{Fast content rendering and SEO performance}  - \href{https://pagespeed.web.dev/analysis/https-vivekirl-space/eg0efcysim?form_factor=mobile}{\underline{\textbf{0.8s}}} on blog page and \href{https://pagespeed.web.dev/analysis/https-vivekirl-studio/uhozntfgqf?form_factor=mobile}{\underline{\textbf{1.0s}}} on portfolio page.}
+          %\resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    
+
+
+\end{document}
